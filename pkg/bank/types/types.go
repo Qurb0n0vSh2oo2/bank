@@ -4,6 +4,8 @@ type Money int64
 
 type Currency string
 
+type Category string
+
 const (
 	TJS Currency = "TJS"
 	RUB Currency = "RUB"
@@ -27,4 +29,10 @@ type Card struct {
 type Payment struct {
 	ID     int
 	Amount Money
+}
+
+type Circle struct {
+	x float64
+    y float64
+    r float64
 }
